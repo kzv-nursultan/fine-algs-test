@@ -1,17 +1,16 @@
 import { useContext } from "react";
 import { MainContext } from "../App";
+import { Button } from "../partials/Button";
+import { Title } from "../partials/Title";
 
 const SuccessPage = () => {
   const { setSuccess } = useContext(MainContext);
+
   return (
-    <div>
-      <h1>
-        Success!
-      </h1>
-      <button onClick={()=> setSuccess(false)}>
-        Go back
-      </button>
-    </div>
+    <>
+      <Title text='Success!'/>
+      <Button text="Go back" onClick={() => setSuccess(false)}/>
+    </>
   )
 }
 

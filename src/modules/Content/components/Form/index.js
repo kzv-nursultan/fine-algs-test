@@ -1,9 +1,9 @@
 import { useContext, useState } from 'react'
 import { MainContext } from '../../../../App'
-import { Button } from './components/Button'
+import { Button } from '../../../../partials/Button'
 import { CheckBox } from './components/CheckBox'
 import { TextField } from './components/TextField/TextField'
-import { FormTitle } from './components/Title'
+import { Title } from '../../../../partials/Title'
 
 const initialState = {
   name: '',
@@ -30,7 +30,7 @@ export const Form = () => {
 
   return (
     <div style={{ width: '100%' }}>
-      <FormTitle />
+      <Title />
       <form onSubmit={onSubmitHandler}>
         <TextField
           name='name'
