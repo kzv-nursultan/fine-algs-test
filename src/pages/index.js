@@ -1,6 +1,8 @@
+import {Header} from "../modules/Header";
+
 const AuthPage = () => {
   return (
-    <h1>here goes header</h1>
+    <Header/>
   )
 }
 
