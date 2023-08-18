@@ -34,6 +34,7 @@ export const TextField = ({
         required
         onBlur={onBlurHandler}
         style={{border: error && '1.5px solid #FF0000'}}
+        data-testid={name === 'name' ? 'name-input' : 'email-input'}
       />
       {error &&
         <span className='error-msg'>
